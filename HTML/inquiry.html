@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquire Now | Xcel Industries</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/inquiry.css">
+    <link rel="icon" type="image/png" href="/Images/brand/favicon-32x32.png">
+</head>
+ 
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+ 
+        <a href="/HTML/index.html" class="logo">
+            <img src="/Images/brand/xcel-logo.png" alt="Xcel Industries logo">
+        </a>
+ 
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="/HTML/index.html">Home</a></li>
+                <li><a href="/HTML/about.html">About</a></li>
+                <li><a href="/HTML/inventory.html">Inventory</a></li>
+                <li><a href="/HTML/services.html">Services</a></li>
+                <li><a href="/HTML/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+ 
+        <a href="/HTML/inquiry.html" class="inquire-btn active">Inquire Now</a>
+ 
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+ 
+        </div>
+ 
+  </header>
+ 
+  <section class="inquiry-form-section">
+    <div class="container">
+ 
+      <form class="inquiry-form" action="#" method="POST">
+ 
+        <div class="form-group">
+          <label for="selected-vehicle">Selected Vehicle</label>
+          <select id="selected-vehicle" name="selected-vehicle" required>
+            <option value="" disabled selected>Choose a vehicle</option>
+            <optgroup label="Sports Cars">
+              <option value="toyota-gr-supra-mk5">Toyota GR Supra MK5 (2026)</option>
+              <option value="bmw-z4-m40i">BMW Z4 M40i (2019)</option>
+              <option value="nissan-400z">Nissan 400z (2025)</option>
+              <option value="ford-mustang-gt">Ford Mustang GT (2026)</option>
+              <option value="toyota-gr86-mt">Toyota GR86 MT (2025)</option>
+              <option value="dodge-challenger-rt">Dodge Challenger R/T (2018)</option>
+            </optgroup>
+            <optgroup label="Super Cars">
+              <option value="porsche-911-2-gt3-rs">Porsche 911.2 GT3 RS (2018)</option>
+              <option value="audi-r8-v10">Audi R8 V10 (2023)</option>
+              <option value="lamborghini-huracan-sto">Lamborghini Huracan STO (2024)</option>
+              <option value="mclaren-720s">McLaren 720s (2021)</option>
+              <option value="ferrari-488-spyder">Ferrari 488 Spyder (2018)</option>
+              <option value="lamborghini-aventador-sv">Lamborghini Aventador SV (2017)</option>
+            </optgroup>
+            <optgroup label="Luxury Cars">
+              <option value="mercedes-benz-amg-s63">Mercedes-Benz AMG S63 (2018)</option>
+              <option value="audi-rs7">Audi RS7 (2023)</option>
+              <option value="bmw-m5-competition">BMW M5 Competition (2022)</option>
+              <option value="rolls-royce-wraith">Rolls-Royce Wraith (2022)</option>
+              <option value="audi-rs6-avant">Audi RS6 Avant (2024)</option>
+              <option value="porsche-taycan-gt">Porsche Taycan GT</option>
+            </optgroup>
+            <optgroup label="Premium SUVs">
+              <option value="lamborghini-urus">Lamborghini Urus (2020)</option>
+              <option value="land-rover-defender">Land Rover Defender (2018)</option>
+              <option value="audi-rsq8">Audi RSQ8 (2025)</option>
+              <option value="cadillac-escalade">Cadillac Escalade (2022)</option>
+              <option value="toyota-land-cruiser">Toyota Land Cruiser (2023)</option>
+            </optgroup>
+            <option value="general-inquiry">General Inquiry / Not Sure Yet</option>
+          </select>
+        </div>
+ 
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Juan Dela Cruz" required>
+        </div>
+ 
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="juan@email.com" required>
+        </div>
+ 
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+63 9XX XXX XXXX" required>
+        </div>
+ 
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what you're looking for, or any questions you have..."></textarea>
+        </div>
+ 
+        <button type="submit" class="submit-inquiry-btn">Submit Inquiry</button>
+ 
+      </form>
+ 
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+ 
+      <div class="footer-col footer-brand">
+        <h3>Xcel Industries</h3>
+        <p>Where Automotive Meets Excellence.</p>
+      </div>
+ 
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/HTML/index.html">Home</a></li>
+          <li><a href="/HTML/about.html">About</a></li>
+          <li><a href="/HTML/inventory.html">Inventory</a></li>
+          <li><a href="/HTML/services.html">Services</a></li>
+          <li><a href="/HTML/contact.html">Contact</a></li>
+        </ul>
+      </div>
+ 
+      <div class="footer-col">
+        <h4>Contact and Socials</h4>
+        <ul>
+          <li>BGC, Taguig, Philippines</li>
+          <li>+63 9XX XXX XXXX</li>
+          <li>info@xcelindustries.com</li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+ 
+    </div>
+ 
+    <div class="footer-bottom">
+      <p>&copy; 2026 Xcel Industries. All Rights Reserved.</p>
+    </div>
+  </footer>
+ 
+  <script src="/JS/main.js"></script>
+ 
+</body>
+ 
+</html>

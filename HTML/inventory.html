@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory | Xcel Industries</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/inventory.css">
+    <link rel="icon" type="image/png" href="/Images/brand/favicon-32x32.png">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+
+        <a href="/HTML/index.html" class="logo">
+            <img src="/Images/brand/xcel-logo.png" alt="Xcel Industries logo">
+        </a>
+
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="/HTML/index.html">Home</a></li>
+                <li><a href="/HTML/about.html">About</a></li>
+                <li><a href="/HTML/inventory.html" class="active">Inventory</a></li>
+                <li><a href="/HTML/services.html">Services</a></li>
+                <li><a href="/HTML/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        </div>
+
+  </header>
+
+  <section class="inventory-hero">
+    <div class="inventory-hero-overlay"></div>
+    <div class="container">
+      <h1 class="inventory-hero-headline">
+        Our <span class="text-accent">Inventory</span>
+      </h1>
+      <p class="inventory-hero-subtext">Discover Automotive Excellence.</p>
+    </div>
+  </section>
+
+  <section class="featured-cars-intro-section">
+    <div class="container">
+      <p class="featured-cars-intro">
+        Explore our collection of sports cars, luxury vehicles, and performance SUVs.
+      </p>
+      <h2 class="featured-cars-title">Featured Cars</h2>
+
+      <!-- Category quick-jump nav — anchors down to each category section.
+           Also doubles as a natural hook for JS filter buttons later
+           (e.g. add data-filter="sports-cars" and toggle .car-grid visibility). -->
+      <nav class="category-nav" aria-label="Inventory categories">
+        <a href="#sports-cars" class="category-nav-link">Sports Cars</a>
+        <a href="#super-cars" class="category-nav-link">Super Cars</a>
+        <a href="#luxury-cars" class="category-nav-link">Luxury Cars</a>
+        <a href="#premium-suvs" class="category-nav-link">Premium SUVs</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CATEGORY: SPORTS CARS
+       ========================================================= -->
+  <section class="inventory-category" id="sports-cars" data-category="sports-cars">
+    <div class="container">
+
+      <h3 class="category-title">Sports Cars</h3>
+
+      <div class="car-grid">
+
+        <article class="car-card" data-category="sports-cars">
+          <img class="car-image" src="/Images/cars/toyota-supra.png" alt="Toyota Supra MK5">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/toyota-logo.png" alt="Toyota logo">
+              <h3 class="car-name">Toyota<br>GR Supra MK5 (2026)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 3.0L Inline 6</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 382 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 8-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> RWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;6,500,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="sports-cars">
+          <img class="car-image" src="/Images/cars/bmw-z4.png" alt="BMW Z4">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/bmw-logo.png" alt="BMW logo">
+              <h3 class="car-name">BMW<br>Z4 M40i (2019)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 3.0L Inline 6</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 382 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 6-Speed MT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> RWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;5,800,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="sports-cars">
+          <img class="car-image" src="/Images/cars/nissan-400z.png" alt="Nissan 400z">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/nissan-logo.png" alt="Nissan logo">
+              <h3 class="car-name">Nissan<br>400z (2025)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 3.0L V6TT</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 400 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 6-Speed MT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> RWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;7,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="sports-cars">
+          <img class="car-image" src="/Images/cars/ford-mustang.png" alt="Ford Mustang">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/ford-logo.png" alt="Ford logo">
+              <h3 class="car-name">Ford<br>Mustang GT (2026)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 5.0L V8</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 480 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 10-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> RWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;6,800,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="sports-cars">
+          <img class="car-image" src="/Images/cars/toyota-gr86.png" alt="Toyota GR86">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/toyota-logo.png" alt="Toyota logo">
+              <h3 class="car-name">Toyota<br>GR86 MT (2025)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 2.4L Boxer</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 228 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 6-Speed MT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> RWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;3,200,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="car-card" data-category="sports-cars">
+          <img class="car-image" src="/Images/cars/dodge-challenger.png" alt="Dodge Challenger">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/dodge-logo.png" alt="Dodge logo">
+              <h3 class="car-name">Dodge<br>Challenger R/T (2018)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 5.7L V8</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 375 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 8-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> RWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;6,500,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CATEGORY: SUPER CARS
+       (Empty for now — add super cars here as you get them)
+       ========================================================= -->
+  
+  <section class="inventory-category" id="super-cars" data-category="super-cars">
+    <div class="container">
+
+      <h3 class="category-title">Super Cars</h3>
+
+      <div class="car-grid">
+        <article class="car-card" data-category="super-cars">
+          <img class="car-image" src="/Images/cars/porsche-gt3rs.png" alt="Porsche GT3 RS">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/porsche-logo.png" alt="Porsche logo">
+              <h3 class="car-name">Porsche<br>911.2 GT3 RS (2018)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 4.0L Flat 6</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 520 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 7-Speed DCT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> RWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;15,800,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="super-cars">
+          <img class="car-image" src="/Images/cars/audi-r8.png" alt="Audi R8">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/audi-logo.png" alt="Audi logo">
+              <h3 class="car-name">Audi<br>R8 V10 (2023)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 5.2L NA V10</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 602 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 7-Speed DCT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;17,500,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="super-cars">
+          <img class="car-image" src="/Images/cars/lamborghini-huracan.png" alt="Lamborghini Huracan">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/lamborghini-logo.png" alt="Lamborghini logo">
+              <h3 class="car-name">Lamborghini<br>Huracan STO (2024)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 5.2L NA V10</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 630 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 7-Speed DCT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> RWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;30,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="super-cars">
+          <img class="car-image" src="/Images/cars/mclaren-720s.png" alt="McLaren 720s">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/mclaren-logo.png" alt="McLaren logo">
+              <h3 class="car-name">McLaren<br>720s (2021)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 4.0L V8TT</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 710 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 7-Speed DCT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> RWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;26,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="super-cars">
+          <img class="car-image" src="/Images/cars/ferrari-488.png" alt="Ferrari 488 Spyder">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/ferrari-logo.png" alt="Ferrari logo">
+              <h3 class="car-name">Ferrari<br>488 Spyder (2018)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 3.9L V8TT</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 661 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 7-Speed DCT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> RWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;22,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="super-cars">
+          <img class="car-image" src="/Images/cars/lamborghini-aventador.png" alt="Lamborghini Aventador">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/lamborghini-logo.png" alt="Lamborghini logo">
+              <h3 class="car-name">Lamborghini<br>Aventador SV (2017)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 6.5L NA V12</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 740 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 7-Speed ISR</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;40,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CATEGORY: LUXURY CARS
+       (Empty for now — add luxury sedans/coupes here as you get them)
+       ========================================================= -->
+  
+  <section class="inventory-category" id="luxury-cars" data-category="luxury-cars">
+    <div class="container">
+
+      <h3 class="category-title">Luxury Cars</h3>
+
+      <div class="car-grid">
+
+        <article class="car-card" data-category="luxury-cars">
+          <img class="car-image" src="/Images/cars/mercedes-s63.png" alt="Mercedes S63">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/mercedes-logo.png" alt="Mercedes logo">
+              <h3 class="car-name">Mercedes-Benz<br>AMG S63 (2018)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 4.0L V8TT</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 603 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 7-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;12,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="luxury-cars">
+          <img class="car-image" src="/Images/cars/audi-rs7.png" alt="Audi RS7">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/audi-logo.png" alt="Audi logo">
+              <h3 class="car-name">Audi<br>RS7 (2023)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 4.0L V8TT</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 621 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 8-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;16,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="luxury-cars">
+          <img class="car-image" src="/Images/cars/bmw-m5.png" alt="BMW M5">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/bmw-logo.png" alt="BMW Logo">
+              <h3 class="car-name">BMW<br>M5 Competition (2022)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 4.4L V8TT</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 617 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 8-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;15,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="luxury-cars">
+          <img class="car-image" src="/Images/cars/rr-wraith.png" alt="Rolls-Royce Wraith">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/rr-logo.png" alt="Rolls-Royce logo">
+              <h3 class="car-name">Rolls-Royce<br>Wraith (2022)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 6.6L V12TT</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 624 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 8-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;30,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="luxury-cars">
+          <img class="car-image" src="/Images/cars/audi-rs6.png" alt="Audi RS6">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/audi-logo.png" alt="Audi logo">
+              <h3 class="car-name">Audi<br>RS6 Avant (2024)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 4.0L V8TT</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 621 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 8-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;15,800,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="luxury-cars">
+          <img class="car-image" src="/Images/cars/porsche-taycan.png" alt="Porsche Taycan GT">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/porsche-logo.png" alt="Porsche logo">
+              <h3 class="car-name">Porsche<br>Taycan Turbo GT (2025)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> Dual Electric</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 777 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 2-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;22,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CATEGORY: PREMIUM SUVs
+       ========================================================= -->
+  <section class="inventory-category" id="premium-suvs" data-category="premium-suvs">
+    <div class="container">
+
+      <h3 class="category-title">Premium SUVs</h3>
+
+      <div class="car-grid">
+
+        <article class="car-card" data-category="premium-suvs">
+          <img class="car-image" src="/Images/cars/lamborghini-urus.png" alt="Lamborghini Urus 2020">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/lamborghini-logo.png" alt="Lamborghini logo">
+              <h3 class="car-name">Lamborghini<br>Urus (2020)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 4.0L TT V8</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 640 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 8-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;24,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="premium-suvs">
+          <img class="car-image" src="/Images/cars/landrover-defender.png" alt="Land Rover Defender">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/land-rover-logo.png" alt="Land Rover logo">
+              <h3 class="car-name">Land Rover<br>Defender (2018)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 3.0L Inline 6</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 395 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 8-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;12,000,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="premium-suvs">
+          <img class="car-image" src="/Images/cars/audi-rsq8.png" alt="Audi RSQ8">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/audi-logo.png" alt="Audi logo">
+              <h3 class="car-name">Audi<br>RSQ8 (2025)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 4.0L V8TT</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 591 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 8-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;14,500,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="premium-suvs">
+          <img class="car-image" src="/Images/cars/cadillac-escalade.png" alt="Cadillac Escalade">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/cadillac-logo.png" alt="Cadillac logo">
+              <h3 class="car-name">Cadillac<br>Escalade (2022)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 6.2 NA V8</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 420 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 10-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;15,500,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="premium-suvs">
+          <img class="car-image" src="/Images/cars/toyota-lc.png" alt="Toyota Land Cruiser">
+
+          <div class="car-card-body">
+            <div class="car-brand">
+              <img class="car-brand-logo" src="/Images/logos/toyota-logo.png" alt="Toyota logo">
+              <h3 class="car-name">Toyota<br>Land Cruiser (2023)</h3>
+            </div>
+
+            <ul class="car-specs">
+              <li class="spec-item"><img src="/Images/icons/engine-icon.png" alt=""> 3.3L V6TT</li>
+              <li class="spec-item"><img src="/Images/icons/horsepower-icon.png" alt=""> 302 HP</li>
+              <li class="spec-item"><img src="/Images/icons/transmission-icon.png" alt=""> 10-Speed AT</li>
+              <li class="spec-item"><img src="/Images/icons/drivetrain-icon.png" alt=""> AWD</li>
+            </ul>
+
+            <p class="car-price">&#8369;7,200,000</p>
+
+            <div class="car-actions">
+              <a href="/HTML/inventory-details.html" class="view-details-btn">View Details</a>
+              <a href="/HTML/inquiry.html" class="inquire-btn">Inquire Now</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-col footer-brand">
+        <h3>Xcel Industries</h3>
+        <p>Where Automotive Meets Excellence.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/HTML/index.html">Home</a></li>
+          <li><a href="/HTML/about.html">About</a></li>
+          <li><a href="/HTML/inventory.html">Inventory</a></li>
+          <li><a href="/HTML/services.html">Services</a></li>
+          <li><a href="/HTML/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact and Socials</h4>
+        <ul>
+          <li>BGC, Taguig, Philippines</li>
+          <li>+63 9XX XXX XXXX</li>
+          <li>info@xcelindustries.com</li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Xcel Industries. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/JS/main.js"></script>
+  <script src="/JS/inventory.js"></script>
+
+</body>
+
+</html>
