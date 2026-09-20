@@ -1,0 +1,117 @@
+.about-hero {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url('../Images/banners/about-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 11, 15, 0.6);
+}
+
+.about-hero-headline {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  font-family: var(--font-display);
+  font-size: 74px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+}
+
+.about-section {
+  padding: 88px 0;
+}
+
+.about-title {
+  font-family: var(--font-display);
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: 48px;
+}
+
+.about-card {
+  max-width: 720px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.about-card:last-child {
+  margin-bottom: 0;
+}
+
+.about-card p {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.85;
+  color: var(--color-light);
+}
+
+.about-subtitle {
+  font-family: var(--font-display);
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .about-hero {
+    min-height: 440px;
+  }
+
+  .about-hero-headline {
+    font-size: 44px;
+  }
+
+  .about-section {
+    padding: 64px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero {
+    min-height: 340px;
+  }
+
+  .about-hero-headline {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+
+  .about-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .about-subtitle {
+    font-size: 30px;
+  }
+
+  .about-card {
+    margin-bottom: 48px;
+  }
+
+  .about-card p {
+    font-size: 16px;
+  }
+}
