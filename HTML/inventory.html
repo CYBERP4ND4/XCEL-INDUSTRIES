@@ -70,6 +70,17 @@
         <a href="#luxury-cars" class="category-nav-link">Luxury Cars</a>
         <a href="#premium-suvs" class="category-nav-link">Premium SUVs</a>
       </nav>
+
+      <div class="sort-bar">
+        <label for="sort-select" class="sort-label">Sort by</label>
+        <select id="sort-select" class="sort-select">
+          <option value="default">Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="year-desc">Year: Newest First</option>
+          <option value="year-asc">Year: Oldest First</option>
+        </select>
+      </div>
     </div>
   </section>
 
@@ -1084,6 +1095,7 @@
           <img class="details-modal-brand-logo" src="" alt="">
           <h3 class="details-modal-name"></h3>
         </div>
+        <p class="details-modal-description"></p>
         <ul class="details-modal-specs"></ul>
         <p class="details-modal-price"></p>
         <a href="inquiry.html" class="inquire-btn details-modal-inquire">Inquire Now</a>
