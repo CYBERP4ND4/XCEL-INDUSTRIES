@@ -1,6 +1,6 @@
 .services-hero {
   position: relative;
-  min-height: 480px;
+  min-height: 580px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@
 }
 
 .services-section {
-  padding: 64px 0 88px;
+  padding: 24px 0 88px;
 }
 
 .services-intro {
@@ -112,7 +112,7 @@
 
 @media (max-width: 1024px) {
   .services-hero {
-    min-height: 380px;
+    min-height: 440px;
   }
 
   .services-hero-headline {
@@ -126,7 +126,7 @@
 
 @media (max-width: 640px) {
   .services-hero {
-    min-height: 300px;
+    min-height: 360px;
   }
 
   .services-hero-headline {

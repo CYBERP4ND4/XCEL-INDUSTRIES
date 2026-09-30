@@ -1,6 +1,6 @@
 .inventory-hero {
   position: relative;
-  min-height: 520px;
+  min-height: 580px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@
 }
 
 .featured-cars-intro-section {
-  padding: 56px 0 0;
+  padding: 24px 0 0;
   text-align: center;
 }
 
@@ -248,7 +248,7 @@
 
 @media (max-width: 1024px) {
   .inventory-hero {
-    min-height: 400px;
+    min-height: 440px;
   }
 
   .inventory-hero-headline {
@@ -266,7 +266,7 @@
 
 @media (max-width: 640px) {
   .inventory-hero {
-    min-height: 320px;
+    min-height: 360px;
   }
 
   .inventory-hero-headline {

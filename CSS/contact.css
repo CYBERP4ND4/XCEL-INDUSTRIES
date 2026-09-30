@@ -1,6 +1,6 @@
 .contact-hero {
   position: relative;
-  min-height: 340px;
+  min-height: 580px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,7 @@
 
 .contact-hero-headline {
   font-family: var(--font-display);
-  font-size: 44px;
+  font-size: 56px;
   text-transform: uppercase;
   letter-spacing: 0.01em;
   color: var(--color-white);
@@ -33,9 +33,9 @@
 
 .contact-hero-subtext {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 18px;
   color: var(--color-light);
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .contact-info-section {
@@ -233,6 +233,10 @@
 }
 
 @media (max-width: 1024px) {
+  .contact-hero {
+    min-height: 440px;
+  }
+
   .contact-info-grid {
     grid-template-columns: 1fr;
     max-width: 400px;
@@ -250,11 +254,11 @@
 
 @media (max-width: 640px) {
   .contact-hero {
-    min-height: 260px;
+    min-height: 360px;
   }
 
   .contact-hero-headline {
-    font-size: 30px;
+    font-size: 34px;
   }
 
   .contact-info-title,

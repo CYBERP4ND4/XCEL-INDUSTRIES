@@ -1,6 +1,6 @@
 .about-hero {
   position: relative;
-  min-height: 600px;
+  min-height: 580px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@
   align-items: center;
   padding: 40px 0;
   font-family: var(--font-display);
-  font-size: 74px;
+  font-size: 68px;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -40,7 +40,7 @@
 
 .about-title {
   font-family: var(--font-display);
-  font-size: 40px;
+  font-size: 48px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-align: center;
@@ -60,7 +60,7 @@
 
 .about-card p {
   font-family: var(--font-body);
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.85;
   color: var(--color-light);
 }
@@ -90,7 +90,7 @@
 
 @media (max-width: 640px) {
   .about-hero {
-    min-height: 340px;
+    min-height: 360px;
   }
 
   .about-hero-headline {
