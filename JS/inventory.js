@@ -16,6 +16,67 @@ document.addEventListener('DOMContentLoaded', function () {
     'premium-suvs': 'premium SUV'
   };
 
+  var bodyTypeLabels = {
+    'sports-cars': 'Sports Car',
+    'super-cars': 'Super Car',
+    'luxury-cars': 'Luxury Car',
+    'premium-suvs': 'Premium SUV'
+  };
+
+  var seatingByCategory = {
+    'sports-cars': '2 Seats',
+    'super-cars': '2 Seats',
+    'luxury-cars': '5 Seats',
+    'premium-suvs': '5-7 Seats'
+  };
+
+  var electricModels = ['tesla', 'taycan'];
+
+  function getNameParts(card) {
+    var nameEl = card.querySelector('.car-name');
+    if (!nameEl) return { brand: '', model: '', year: '' };
+
+    var parts = nameEl.innerHTML.split('<br>');
+    var brand = (parts[0] || '').replace(/<[^>]+>/g, '').trim();
+    var modelRaw = (parts[1] || '').replace(/<[^>]+>/g, '').trim();
+    var yearMatch = modelRaw.match(/\((\d{4})\)/);
+    var year = yearMatch ? yearMatch[1] : '';
+    var model = modelRaw.replace(/\s*\(\d{4}\)/, '').trim();
+
+    return { brand: brand, model: model, year: year };
+  }
+
+  function buildMileage(year, brand, model) {
+    var age = 2026 - parseInt(year, 10);
+    if (!age || age <= 0) return 'Brand New';
+
+    var text = brand + model;
+    var hash = 0;
+    for (var i = 0; i < text.length; i++) {
+      hash = (hash * 31 + text.charCodeAt(i)) % 4000;
+    }
+
+    var km = Math.round((age * 9000 + hash) / 100) * 100;
+    return km.toLocaleString() + ' km';
+  }
+
+  function buildExtraSpecs(card) {
+    var parts = getNameParts(card);
+    var category = card.getAttribute('data-category');
+    var fullName = (parts.brand + ' ' + parts.model).toLowerCase();
+    var isElectric = electricModels.some(function (term) {
+      return fullName.indexOf(term) !== -1;
+    });
+
+    return [
+      { label: 'Body Type', value: bodyTypeLabels[category] || 'Vehicle' },
+      { label: 'Fuel Type', value: isElectric ? 'Electric' : 'Gasoline' },
+      { label: 'Seating', value: seatingByCategory[category] || '—' },
+      { label: 'Mileage', value: buildMileage(parts.year, parts.brand, parts.model) },
+      { label: 'Availability', value: 'In Stock' }
+    ];
+  }
+
   function buildDescription(card) {
     var nameEl = card.querySelector('.car-name');
     var specs = card.querySelectorAll('.spec-item');
@@ -60,6 +121,13 @@ document.addEventListener('DOMContentLoaded', function () {
       var item = document.createElement('li');
       item.className = 'spec-item';
       item.innerHTML = spec.innerHTML;
+      modalSpecs.appendChild(item);
+    });
+
+    buildExtraSpecs(card).forEach(function (spec) {
+      var item = document.createElement('li');
+      item.className = 'spec-item';
+      item.innerHTML = '<strong>' + spec.label + ':</strong>&nbsp;' + spec.value;
       modalSpecs.appendChild(item);
     });
 

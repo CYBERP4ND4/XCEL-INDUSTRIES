@@ -29,6 +29,10 @@ body {
   line-height: 1.5;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -71,8 +75,8 @@ ul {
 }
 
 .logo img {
-  height: 96px;
-  margin: -12px 0;
+  height: 105px;
+  margin: -16px 0;
 }
 
 .main-nav {

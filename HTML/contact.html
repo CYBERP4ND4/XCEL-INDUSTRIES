@@ -98,8 +98,10 @@
  
         <div class="showroom-map">
           <h3 class="showroom-subtitle">Map</h3>
-          <img
-            class="map-image" src="../Images/banners/xcel-map.png" alt="Map showing the Xcel Industries showroom location">
+          <button type="button" class="map-image-trigger" aria-label="View larger map">
+            <img
+              class="map-image" src="../Images/banners/xcel-map.png" alt="Map showing the Xcel Industries showroom location">
+          </button>
         </div>
  
         <div class="showroom-hours-item">
@@ -180,7 +182,16 @@
     </div>
   </footer>
  
+  <div class="image-lightbox" id="map-lightbox" aria-hidden="true">
+    <div class="image-lightbox-backdrop" data-lightbox-close></div>
+    <div class="image-lightbox-content">
+      <button class="image-lightbox-close" type="button" aria-label="Close" data-lightbox-close>&times;</button>
+      <img class="image-lightbox-img" src="../Images/banners/xcel-map.png" alt="Map showing the Xcel Industries showroom location">
+    </div>
+  </div>
+
   <script src="../JS/main.js"></script>
+  <script src="../JS/contact.js"></script>
  
 </body>
  

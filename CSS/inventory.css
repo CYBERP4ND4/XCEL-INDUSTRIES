@@ -305,10 +305,6 @@
   padding: 24px;
 }
 
-body.modal-open {
-  overflow: hidden;
-}
-
 .details-modal.is-open {
   display: flex;
 }
