@@ -22,4 +22,4 @@ document.addEventListener('DOMContentLoaded', function () {
     nav.classList.remove('is-open');
     toggle.setAttribute('aria-expanded', 'false');
   });
-});
+}); 
